@@ -6,6 +6,10 @@ Client website rebuild and migration from Wix to a custom, responsive HTML/CSS s
 
 ## Goals
 
+Client website rebuild and migration from Wix to a custom, responsive HTML/CSS solution.
+
+## Goals
+
 - Migrate away from a website builder (Wix)
 - Gain full control over layout and styling
 - Improve responsiveness across screen sizes
