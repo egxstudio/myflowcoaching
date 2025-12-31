@@ -1,0 +1,28 @@
+:root {
+  /* Typography */
+  --font-main: "Aldrich", sans-serif;
+  --font-hand: "Permanent Marker", cursive;
+
+  --line-height: 1.6;
+
+  /* Spacing scale */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+
+  /* Layout */
+  --radius: 0.5rem;
+  --max-width: 900px;
+
+  /* Colors */
+  --color-text: #ffffff;
+  --color-muted: #cccccc;
+  --color-glass: #ffffff22;
+  --color-bg: #000000;
+
+  /* Accents */
+  --accent-red: red;
+  --accent-yellow: gold;
+  --accent-green: limegreen;
+}
