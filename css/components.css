@@ -1,15 +1,13 @@
 /* Header / Footer */
 .site-header,
 .site-footer {
-  height: 200px;
+  padding-block: var(--space-2);
   background: #fff;
   color: #000;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  flex-shrink: 0;
 }
 .header-inner {
   display: grid;
@@ -35,24 +33,28 @@
 .header-nav {
   grid-area: nav;
 }
-.logo {
+.header-logo {
   height: 180px;
   width: 180px;
+  background: url("../assets/images/logo") center / contain no-repeat;
 }
 /* Intro / sections */
 .hero {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
+  padding-block: var(--space-3);
   display: flex;
   justify-content: center;
   text-align: center;
-  background-image: url("/myflowcoaching/assets/images/flow-line.avif");
+  background-image: url("../assets/images/flow-line.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.section {
+.container {
   background: var(--color-glass);
+}
+.section {
   border-radius: var(--radius);
   padding: var(--space-4);
   text-align: center;
@@ -81,6 +83,24 @@
   align-items: center;
 
   text-align: center;
+}
+
+.image-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-wealth {
+  background-image: url("../assets/images/wealth.avif");
+}
+
+.image-alive {
+  background-image: url("../assets/images/alive.avif");
+}
+
+.image-love {
+  background-image: url("../assets/images/love.avif");
 }
 
 .card__header {

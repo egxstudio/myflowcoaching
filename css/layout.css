@@ -16,7 +16,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("/myflowcoaching/assets/images/flowing.avif") center / cover no-repeat;
+  background: url("../assets/images/flowing.avif") center / cover no-repeat;
   z-index: -1;
 }
 
@@ -33,9 +33,7 @@ body::before {
   gap: var(--space-2);
   flex-wrap: wrap;
   justify-content: center;
-  justify-items: flex-end;
   align-items: flex-end;
-  align-content: flex-end;
 }
 
 .grid {
@@ -47,5 +45,17 @@ body::before {
 .container {
   width: 90%;
   max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-4);
+}
+
+.section > * + * {
+  margin-top: var(--space-2);
+}
+
+.section p {
   margin-inline: auto;
 }
