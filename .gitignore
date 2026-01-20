@@ -11,5 +11,8 @@
 #Temporary files
 .tmp/
 
+#Templates
+my-templates/
+
 # Local agent guide
 AGENTS.md

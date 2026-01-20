@@ -12,8 +12,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.nav-checkbox,
-.sub-checkbox {
+.nav-checkbox {
   display: none;
 }
 .nav-list {
@@ -35,31 +34,6 @@
 .nav-quote {
   font-size: 0.8rem;
   text-align: center;
-}
-
-.sub-menu {
-  max-height: 0;
-  /* background-color: #ffffff60; */
-  overflow: hidden;
-  transition: all 0.3s ease;
-  padding-left: var(--space-5);
-}
-.topics {
-  padding-left: var(--space-5);
-}
-
-.sub-checkbox:checked ~ .sub-menu {
-  max-height: 300px;
-  padding: var(--space-1) var(--space-5);
-}
-
-.sub-label {
-  cursor: pointer;
-}
-
-.sub-checkbox:checked ~ .sub-label span {
-  transform: rotate(45deg);
-  display: inline-block;
 }
 
 .hamburger {
