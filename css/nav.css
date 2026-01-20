@@ -1,16 +1,27 @@
-.mobile-nav {
+.nav-main {
+  flex: 1;
+}
+.navigation {
   position: sticky;
   position: -webkit-sticky;
   width: 100%;
-  min-width: var(--screen-xs);
+  /* min-width: var(--screen-xs); */
   height: var(--mobile-touch);
   z-index: 9999;
   background-color: #ffffff60;
   top: 0;
 
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+.nav-content-wrapper {
+  position: relative;
   display: flex;
+  width: 100%; /* Stretch inside the max-width */
+  height: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes Quote to left and Hamburger to right */
 }
 .nav-checkbox {
   display: none;
@@ -30,10 +41,6 @@
 
 .nav-checkbox:checked ~ .nav-list {
   max-height: 100vh;
-}
-.nav-quote {
-  font-size: 0.8rem;
-  text-align: center;
 }
 
 .hamburger {

@@ -11,9 +11,9 @@
       <div class="logo" id="logo"></div>
       <h1>FLOW COACHING</h1>
     </header>
-    <nav class="navigation debug">
-      <div class="container nav-content-wrapper">
-        <ul class="nav-main flex-row debug">
+    <nav class="navigation">
+      <div class="container nav-content-wrapper debug">
+        <ul class="nav-main flex-row">
           <li class="button"><a href="index.html">Home</a></li>
           <li class="button">
             <a href="index.html">Qui suis-je?</a>
@@ -33,22 +33,22 @@
           <li>
             <a href="index.html" class="button">Sante Physique</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Sante Mentale</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Relations</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Carriere</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Spiritualite</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Grandir</a>
           </li>
-          <li>
+          <li class="button">
             <a href="index.html" class="button">Take the test</a>
           </li>
         </ul>
