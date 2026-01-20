@@ -3,21 +3,78 @@
 *::after {
   box-sizing: border-box;
 }
-
 * {
+  padding: 0;
   margin: 0;
 }
-
+html,
+body {
+  width: 100%;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+}
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: transparent;
+}
 img,
+picture,
+video,
+canvas,
 svg {
   display: block;
-  max-width: 100%;
+  max-width: 100%; /* Prevents images from overflowing 320px screens */
 }
-
-ul {
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: normal; /* Removes default bolding so you can control it via variables */
+}
+ul,
+ol {
   list-style: none;
-  padding: 0;
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+textarea {
+  resize: vertical;
+}
+/* Accessibility. */
+/* Hides elements visually but keeps them readable for screen readers. */
+*/ .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

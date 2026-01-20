@@ -1,61 +1,56 @@
-/* Page shell */
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 main {
+  min-width: var(--screen-xs);
+  width: 100%;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  padding: var(--space-8) 0;
+}
+footer {
+  /* 4. Footer stays at the bottom and takes only the space it needs */
+  width: 100%;
+  height: 200px;
+  padding: var(--space-8) 0;
+}
+
+/* CLASSES  */
+.nav-content-wrapper {
+  display: flex;
+  width: 100%; /* Stretch inside the max-width */
+  height: 100%;
+  align-items: center;
+  justify-content: space-between; /* Pushes Quote to left and Hamburger to right */
+}
+.container {
+  min-width: var(--screen-xs);
+  max-width: var(--screen-lg);
+  padding: 0 var(--space-4);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+.flex-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
-
-/* Background layer */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url("../assets/images/flowing.avif") center / cover no-repeat;
-  z-index: -1;
-}
-
-/* Layout helpers (CUBE composition) */
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--space-3);
-}
-
-.row {
-  display: flex;
-  gap: var(--space-2);
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
-}
-
-.grid {
-  display: grid;
+  align-items: center;
   gap: var(--space-4);
 }
 
-/* Centered container */
-.container {
-  width: 90%;
-  max-width: var(--max-width);
-  margin-inline: auto;
-}
-
-.section {
-  padding-block: var(--space-4);
-}
-
-.section > * + * {
-  margin-top: var(--space-2);
-}
-
-.section p {
-  margin-inline: auto;
-}
+/* UTILITIES */
