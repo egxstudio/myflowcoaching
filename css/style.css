@@ -1,24 +1,48 @@
-main {
-  background-color: antiquewhite;
+body {
+  background-color: var(--bg-main);
+  color: var(--neutral-900);
 }
+main {
+  /* background-color: var(--bg-main); */
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-hand);
+}
+
 /* COMPONENTS */
+.card {
+  width: 75px;
+  aspect-ratio: 1;
+}
 .button {
   white-space: nowrap;
-  border: 1px solid black;
+  border: 1px solid var(--red-500);
+  color: var(--red-500);
   border-radius: var(--rounded-xl);
   padding: 0.25em 0.5em;
   font-size: var(--text-xs);
   line-height: var(--lh-xs);
-  @container container-width (max-width: var(--screen-md)) {
+  @container (min-width: 320px) {
     & {
       font-size: var(--text-sm);
       line-height: var(--lh-sm);
     }
   }
-}
-@container container-width (max-width: var(--screen-md)) {
-  .button {
-    font-size: var(--text-sm);
-    line-height: var(--lh-sm);
+  @container (min-width: 375px) {
+    & {
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
   }
+  @container (min-width: 640px) {
+    & {
+      font-size: var(--text-lg);
+      line-height: var(--lh-lg);
+    }
+  }
+}
+.border-light {
+  border: 2px solid var(--neutral-100);
 }

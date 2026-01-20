@@ -47,8 +47,35 @@
   --shadow-xl:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
-  /* --- 4. brand palette --- */
+  /* --- 4. COLORS --- */
+  /* --- 🔵 PRIMARY: Trust & Professionalism --- */
+  --primary-600: oklch(35% 0.12 250); /* Deep Navy for Headings */
+  --primary-500: oklch(45% 0.14 250); /* Standard Brand Blue */
+  --primary-100: oklch(93% 0.03 250); /* Subtle Tint for Sections */
 
+  /* --- ✨ ACCENT: Flow & Movement --- */
+  --accent-500: oklch(70% 0.15 190); /* Vibrant Teal for CTAs */
+  --accent-600: oklch(60% 0.13 190); /* Hover state for Teal */
+
+  /* --- 🌸 VIBRANT ACCENTS: Energy & Identity --- */
+  --pink-500: oklch(65% 0.25 340); /* Main Brand Pink */
+  --pink-600: oklch(55% 0.22 340); /* Darker Pink for Contrast */
+  --pink-100: oklch(95% 0.03 340); /* Soft Background Pink */
+
+  /* --- 🔴 REDS: Urgency & Alerts --- */
+  --red-500: oklch(62% 0.22 28); /* Action-oriented Red */
+  --red-600: oklch(50% 0.2 28); /* Deep Red for Text Alerts */
+
+  /* --- ⚪ NEUTRALS: Structure & Readability --- */
+  --neutral-900: oklch(20% 0.02 250); /* Rich Black for Body Text */
+  --neutral-100: oklch(92% 0.01 250); /* Light Gray for Borders */
+  --bg-main: oklch(98% 0.01 250); /* Off-White Canvas */
+  /* --- 🌫️ TRANSPARENCY OVERLAYS --- */
+  /* Used for card shadows, hover effects, or "glass" backgrounds */
+  --surface-opaque: oklch(100% 0 0 / 1); /* 100% Solid White */
+  --surface-glass: oklch(100% 0 0 / 0.7); /* 70% Transparent White */
+  --overlay-dark: oklch(0% 0 0 / 0.4); /* 40% Transparent Black */
+  --shadow-subtle: oklch(20% 0.02 250 / 0.1); /* Very light shadow tint */
   /* --- 5. typography --- */
   /* Font Sizes */
   --text-xs: 0.75rem; /* 12px */
@@ -68,4 +95,7 @@
   --lh-2xl: 2rem; /* 32px */
   --lh-3xl: 2.25rem; /* 36px */
   /* Font families */
+  --font-default: "Inter", system-ui, -apple-system, sans-serif;
+  --font-main: "Aldrich", sans-serif;
+  --font-hand: "Permanent Marker", cursive;
 }
