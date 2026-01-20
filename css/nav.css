@@ -17,6 +17,9 @@
   justify-content: space-between; /* Pushes buttons to left and Hamburger to right */
 }
 .nav-main {
+  text-align: center;
+  display: flex;
+  align-items: center;
   background: var(--surface-glass);
   backdrop-filter: blur(1px);
   isolation: isolate;

@@ -12,12 +12,14 @@ h3 {
 }
 
 /* COMPONENTS */
-.card {
-  width: 75px;
-  aspect-ratio: 1;
+.card-color {
+  text-shadow: 0 2px 4px white;
+  /* min-width: 75px; */
+  /* aspect-ratio: 1; */
 }
 .button {
   flex: 1;
+  font-weight: 700;
   background-color: var(--shadow-subtle);
   white-space: nowrap;
   border: 1px solid var(--red-500);
@@ -46,6 +48,7 @@ h3 {
   }
 }
 .button-hamburger {
+  font-weight: 700;
   color: var(--primary-500);
   display: inline-block;
   width: 100%;
