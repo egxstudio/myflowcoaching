@@ -1,10 +1,8 @@
 html {
-  /* scroll-snap-type: y proximity; */
-  /* scroll-padding-top: var(--mobile-touch); */
 }
 section {
   /* scroll-snap-align: start; */
-  /* margin-top: var(--space-8); */
+  margin-top: var(--space-8);
 }
 body {
   width: 100%;
@@ -12,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
 }
 main {
   min-width: var(--screen-xs);
@@ -37,7 +36,6 @@ footer {
   min-width: var(--screen-xs);
   max-width: var(--screen-lg);
   padding: 0 var(--space-4);
-  margin: 0 auto;
 
   container-type: inline-size;
   container-name: container-width;
@@ -66,6 +64,9 @@ footer {
 }
 .wrap {
   flex-wrap: wrap;
+}
+.gap-d {
+  gap: clamp(var(--space-1), 2vh, var(--space-6));
 }
 iframe {
   width: 100%;
