@@ -1,5 +1,6 @@
 .nav-main {
   flex: 1;
+  justify-content: space-around;
 }
 .navigation {
   position: sticky;
