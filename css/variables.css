@@ -24,12 +24,12 @@
   --space-16: 4rem; /* 64px */
 
   /* border radius */
-  --rounded-sm: 0.125rem; /* 2px */
-  --rounded: 0.25rem; /* 4px */
-  --rounded-md: 0.375rem; /* 6px */
-  --rounded-lg: 0.5rem; /* 8px - Most Common */
-  --rounded-xl: 0.75rem; /* 12px */
-  --rounded-2xl: 1rem; /* 16px */
+  --rounded-sm: 0.125em; /* 2px */
+  --rounded: 0.25em; /* 4px */
+  --rounded-md: 0.375em; /* 6px */
+  --rounded-lg: 0.5em; /* 8px - Most Common */
+  --rounded-xl: 0.75em; /* 12px */
+  --rounded-2xl: 1em; /* 16px */
   --rounded-full: 9999px; /* Pill Shape */
 
   /* --- 2. depth & layering --- */
@@ -73,7 +73,7 @@
   /* --- 🌫️ TRANSPARENCY OVERLAYS --- */
   /* Used for card shadows, hover effects, or "glass" backgrounds */
   --surface-opaque: oklch(100% 0 0 / 1); /* 100% Solid White */
-  --surface-glass: oklch(100% 0 0 / 0.7); /* 70% Transparent White */
+  --surface-glass: oklch(100% 0 0 / 0.3); /* 70% Transparent White */
   --overlay-dark: oklch(0% 0 0 / 0.4); /* 40% Transparent Black */
   --shadow-subtle: oklch(20% 0.02 250 / 0.1); /* Very light shadow tint */
   /* --- 5. typography --- */
