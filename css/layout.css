@@ -1,9 +1,10 @@
 html {
   scroll-snap-type: y proximity;
+  scroll-padding-top: var(--mobile-touch);
 }
 section {
   scroll-snap-align: start;
-  scroll-padding-top: var(--mobile-touch);
+  min-height: 50vh;
   margin-top: var(--space-8);
 }
 body {
