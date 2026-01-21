@@ -10,7 +10,7 @@
 
   /* --- 1. sizing --- */
   --mobile-touch: 48px;
-
+  /* spacing REM */
   --space-1: 0.25rem; /* 4px */
   --space-2: 0.5rem; /* 8px */
   --space-3: 0.75rem; /* 12px */
@@ -36,6 +36,7 @@
 
   /* --- 3. animation & feel --- */
   --transition-speed: 0.3s;
+  --transition-speed-slow: 0.7s;
   --transition-timing: ease-in-out;
   --menu-slide-speed: 0.4s;
   /* Shadows - Tailwind's standard 'md' shadow */
@@ -86,6 +87,7 @@
   --text-2xl: 1.5rem; /* 24px */
   --text-3xl: 1.875rem; /* 30px */
   --text-4xl: 2.25rem; /* 36px */
+  --text-button-fluid: clamp(var(--text-xs), 0.7rem + 0.5vi, var(--text-lg));
   /* --- Corresponding Line Heights --- */
   --lh-xs: 1rem; /* 16px */
   --lh-sm: 1.25rem; /* 20px */

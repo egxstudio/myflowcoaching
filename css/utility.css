@@ -1,0 +1,45 @@
+.debug {
+  outline: 4px dotted black;
+}
+/* GAPS */
+.gap-1 {
+  gap: var(--space-4);
+}
+.gap-1-5 {
+  gap: var(--space-6);
+}
+.gap-2 {
+  gap: var(--space-8);
+}
+.gap-3 {
+  gap: var(--space-16);
+}
+.gap-d {
+  gap: clamp(var(--space-1), 2vh, var(--space-6));
+}
+/* LAYOUT */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+.btn {
+  vertical-align: middle;
+  flex: 1;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: var(--rounded);
+  white-space: nowrap;
+  padding: 0.25em 0.5em;
+  font-size: var(--text-button-fluid);
+  line-height: 1.2;
+  background-color: var(--shadow-subtle);
+  display: inline-block;
+  transition: background var(--transition-speed);
+  color: var(--accent-500);
+  border: 1px solid var(--accent-500);
+}
+.btn-red {
+  color: var(--red-500);
+  border: 1px solid var(--red-500);
+}
+.btn-hamburger {
+  width: 100%;
+  color: var(--primary-500);
+  border: 1px solid var(--neutral-100);
+  border-radius: var(--rounded);
+}
+.card {
+  font-weight: 700;
+  font-size: var(--text-xl);
+  padding: var(--space-6);
+  color: var(--pink-500);
+  border: 1px solid var(--neutral-100);
+  border-radius: var(--size-1);
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 350px;
+  background-color: var(--pink-100);
+}
+.card-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+}
+.card-color {
+  text-shadow: 0 2px 4px white;
+}
+.border-light {
+  border: 1.5px solid var(--neutral-100);
+}

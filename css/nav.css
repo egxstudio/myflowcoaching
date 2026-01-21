@@ -19,6 +19,7 @@
 .nav-main {
   text-align: center;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   background: var(--surface-glass);
   backdrop-filter: blur(1px);
@@ -27,13 +28,26 @@
   flex: 1;
   gap: var(--space-2);
   padding: var(--space-2);
-  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav li {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .nav-checkbox {
   display: none;
 }
+@container (max-width: 319px) {
+  #Home {
+    display: none;
+  }
+}
 .nav-list {
-  background: var(--surface-glass);
   backdrop-filter: blur(1px);
   isolation: isolate;
   background: var(--surface-glass);
@@ -48,10 +62,9 @@
   position: absolute;
   top: var(--mobile-touch);
   right: 0;
-  flex-direction: column;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.9s ease-in-out;
+  transition: max-height var(--transition-speed-slow);
 }
 
 .nav-checkbox:checked ~ .nav-list {
