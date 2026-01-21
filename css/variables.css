@@ -87,7 +87,8 @@
   --text-2xl: 1.5rem; /* 24px */
   --text-3xl: 1.875rem; /* 30px */
   --text-4xl: 2.25rem; /* 36px */
-  --text-button-fluid: clamp(var(--text-xs), 0.7rem + 0.5vi, var(--text-lg));
+  --text-button-fluid: clamp(var(--text-xs), 0.7rem + 0.5cqi, var(--text-lg));
+  --text-fluid: clamp(var(--text-sm), 1.1rem + 0.2cqi, var(--text-3xl));
   /* --- Corresponding Line Heights --- */
   --lh-xs: 1rem; /* 16px */
   --lh-sm: 1.25rem; /* 20px */
