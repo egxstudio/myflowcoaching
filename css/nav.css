@@ -17,6 +17,7 @@
   justify-content: space-between; /* Pushes buttons to left and Hamburger to right */
 }
 .nav-main {
+  height: 100%;
   text-align: center;
   display: flex;
   justify-content: space-around;
