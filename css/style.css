@@ -39,3 +39,17 @@ li {
 li:last-child {
   margin-bottom: 0;
 }
+.card {
+  border-radius: var(--rounded);
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card > svg {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
+    drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.23));
+}
+.card > p {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
+    drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.23));
+}
