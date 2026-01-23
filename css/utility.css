@@ -1,17 +1,17 @@
 .debug {
-  outline: 4px dotted black;
+  outline: 2px dashed red !important;
 }
 /* GAPS */
-.gap-1 {
+.gap-4 {
   gap: var(--space-4);
 }
-.gap-1-5 {
+.gap-6 {
   gap: var(--space-6);
 }
-.gap-2 {
+.gap-8 {
   gap: var(--space-8);
 }
-.gap-3 {
+.gap-16 {
   gap: var(--space-16);
 }
 .gap-d {

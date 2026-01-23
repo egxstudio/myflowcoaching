@@ -21,11 +21,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    sans-serif;
+  font-family: var(--font-main);
   background-color: transparent;
 }
 img,
@@ -68,7 +64,7 @@ textarea {
 }
 /* Accessibility. */
 /* Hides elements visually but keeps them readable for screen readers. */
-*/ .sr-only {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;

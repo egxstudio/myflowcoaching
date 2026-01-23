@@ -62,9 +62,4 @@ iframe {
   padding: 0 var(--space-4);
 
   container-type: inline-size;
-  container-name: container-width;
-}
-.card {
-  container-type: inline-size;
-  container-name: card-width;
 }

@@ -53,19 +53,20 @@
   --primary-600: oklch(35% 0.12 250); /* Deep Navy for Headings */
   --primary-500: oklch(45% 0.14 250); /* Standard Brand Blue */
   --primary-100: oklch(93% 0.03 250); /* Subtle Tint for Sections */
+  --primary-200: oklch(83% 0.03 250);
 
   /* --- ✨ ACCENT: Flow & Movement --- */
-  --accent-500: oklch(70% 0.15 190); /* Vibrant Teal for CTAs */
   --accent-600: oklch(60% 0.13 190); /* Hover state for Teal */
+  --accent-500: oklch(70% 0.15 190); /* Vibrant Teal for CTAs */
 
   /* --- 🌸 VIBRANT ACCENTS: Energy & Identity --- */
-  --pink-500: oklch(65% 0.25 340); /* Main Brand Pink */
   --pink-600: oklch(55% 0.22 340); /* Darker Pink for Contrast */
+  --pink-500: oklch(65% 0.25 340); /* Main Brand Pink */
   --pink-100: oklch(95% 0.03 340); /* Soft Background Pink */
 
   /* --- 🔴 REDS: Urgency & Alerts --- */
-  --red-500: oklch(62% 0.22 28); /* Action-oriented Red */
   --red-600: oklch(50% 0.2 28); /* Deep Red for Text Alerts */
+  --red-500: oklch(60.33% 0.239 8.89); /* Action-oriented Red */
 
   /* --- ⚪ NEUTRALS: Structure & Readability --- */
   --neutral-900: oklch(20% 0.02 250); /* Rich Black for Body Text */

@@ -1,5 +1,10 @@
 .header {
-  background-image: url("/assets/images/bg3.png");
+  /* background-image: url("/assets/images/bkg/clouds.png"); */
+  background-image: image-set(
+    url("/assets/images/bkg/clouds.avif") type("image/avif"),
+    url("/assets/images/bkg/clouds.webp") type("image/webp"),
+    url("/assets/images/bkg/clouds.png") type("image/png")
+  );
   border-radius: var(--rounded);
   padding: var(--space-4) 0;
   background-size: cover;
@@ -13,6 +18,7 @@
   vertical-align: middle;
   flex: 1;
   cursor: pointer;
+  font-family: var(--font-default);
   font-weight: 700;
   border-radius: var(--rounded);
   white-space: nowrap;
@@ -24,6 +30,14 @@
   transition: background var(--transition-speed);
   color: var(--accent-500);
   border: 1px solid var(--accent-500);
+}
+.btn:hover {
+  background-color: var(--accent-500);
+  color: var(--bg-main);
+}
+.btn:focus-visible {
+  outline: 3px solid var(--accent-500);
+  outline-offset: 2px;
 }
 .btn-red {
   color: var(--red-500);
@@ -37,32 +51,29 @@
 }
 /* CARDS */
 .card {
-  font-weight: 700;
-  font-size: var(--text-fluid);
+  /* Layout */
   padding: var(--space-6);
-  color: var(--pink-500);
-  border: 1px solid var(--neutral-100);
-  border-radius: var(--size-1);
   width: 100%;
   aspect-ratio: 1;
   max-width: 350px;
-  background-color: var(--pink-100);
-  /* opacity: 0.7; */
-}
-.card-grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-4);
-}
-.card {
+  /* Visual */
+  background-color: var(--primary-100);
+  border: 1px solid var(--neutral-100);
   border-radius: var(--rounded);
+  /* opacity: 0.7; */
+  /* Depth */
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* Typography */
+  font-weight: 700;
+  font-size: var(--text-fluid);
+  color: var(--red-500);
+  /* Container query */
+  container-type: inline-size;
 }
-.card-color {
-  text-shadow: 0 2px 4px white;
+.card:nth-child(2n) {
+  background-color: var(--primary-200);
 }
 .card > svg {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
@@ -71,4 +82,13 @@
 .card > p {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
     drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.23));
+}
+.card-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+}
+.card-color {
+  text-shadow: 0 2px 4px white;
 }
