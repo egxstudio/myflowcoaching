@@ -1,0 +1,33 @@
+h1,
+h2,
+h3 {
+  font-family: var(--font-hand);
+}
+h1 {
+  margin-bottom: var(--space-4);
+  background: linear-gradient(90deg, var(--primary-500), var(--pink-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2,
+h3 {
+  margin-bottom: var(--space-2);
+}
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-5); /* Room for bullets/numbers */
+}
+li {
+  margin-bottom: var(--space-2); /* Tight space between items */
+}
+li:last-child {
+  margin-bottom: 0;
+}
