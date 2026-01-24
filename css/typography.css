@@ -5,7 +5,12 @@ h3 {
 }
 h1 {
   margin-bottom: var(--space-4);
-  background: linear-gradient(90deg, var(--primary-500), var(--pink-500));
+  background: linear-gradient(
+    90deg,
+    var(--primary-600),
+    var(--primary-500),
+    var(--pink-600)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
