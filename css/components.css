@@ -1,9 +1,9 @@
 .header {
   /* background-image: url("/assets/images/bkg/clouds.png"); */
   background-image: image-set(
-    url("/assets/images/bkg/clouds.avif") type("image/avif"),
-    url("/assets/images/bkg/clouds.webp") type("image/webp"),
-    url("/assets/images/bkg/clouds.png") type("image/png")
+    url("../assets/images/bkg/clouds.avif") type("image/avif"),
+    url("../assets/images/bkg/clouds.webp") type("image/webp"),
+    url("../assets/images/bkg/clouds.png") type("image/png")
   );
   border-radius: var(--rounded);
   padding: var(--space-4) 0;
@@ -14,7 +14,7 @@
   box-shadow: inset 0 0 20px 20px var(--bg-main);
 }
 .hero {
-  background-image: url("/assets/images/flow-line.avif");
+  background-image: url("../assets/images/flow-line.avif");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
