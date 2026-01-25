@@ -54,12 +54,3 @@ iframe {
   border: 0;
   box-shadow: var(--shadow-md);
 }
-
-.container {
-  width: 100%;
-  min-width: var(--screen-xs);
-  max-width: var(--screen-lg);
-  padding: 0 var(--space-4);
-
-  container-type: inline-size;
-}

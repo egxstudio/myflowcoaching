@@ -33,21 +33,35 @@
   --rounded-full: 9999px; /* Pill Shape */
 
   /* --- 2. depth & layering --- */
+  /* borders */
+  --border-thin: 1px solid; /* Hairline; subtle card outlines */
+  --border-normal: 2px solid; /* Standard; buttons, form fields */
+  --border-thick: 3px solid; /* Sections, dividers */
+  --border-heavy: 4px solid; /* Focus states, emphasis */
+  /* border colors */
+  --border-muted: rgba(0, 0, 0, 0.08); /* light backgrounds, cards */
+  --border-default: rgba(0, 0, 0, 0.12); /* Medium gray; sections */
+  --border-strong: rgba(0, 0, 0, 0.2); /* Darker; dividers */
+  --border-accent: rgba(59, 130, 246, 0.2); /* Blue tint; links/buttons */
+  --border-success: rgba(16, 185, 129, 0.3); /* Green; valid states */
+  --border-focus: rgba(59, 130, 246, 0.5); /* High-contrast blue */
+  /* Shadows */
+  --shadow-xs:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.15); /* Subtle ring + tiny lift; ideal for buttons or small cards */
+  --shadow-sm:
+    0 0.5px 1px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1); /* Light elevation; use on cards for clean hover states */
+  --shadow-md:
+    0 1px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.12); /* Medium depth; perfect for feature sections or testimonials */
+  --shadow-lg:
+    0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1); /* Strong lift; great for hero sections or modals */
+  --shadow-xl:
+    0 10px 30px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.12); /* Dramatic; use sparingly on overlays for focus */
 
   /* --- 3. animation & feel --- */
   --transition-speed: 0.3s;
   --transition-speed-slow: 0.7s;
   --transition-timing: ease-in-out;
   --menu-slide-speed: 0.4s;
-  /* Shadows - Tailwind's standard 'md' shadow */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg:
-    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl:
-    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-
   /* --- 4. COLORS --- */
   /* --- 🔵 PRIMARY: Trust & Professionalism --- */
   --primary-600: oklch(35% 0.12 250); /* Deep Navy for Headings */
