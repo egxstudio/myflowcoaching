@@ -95,3 +95,6 @@
 
   container-type: inline-size;
 }
+.h-red {
+  color: var(--red-500);
+}
