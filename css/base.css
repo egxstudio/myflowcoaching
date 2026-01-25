@@ -28,13 +28,3 @@ section {
   width: 100%;
   min-height: 200px;
 }
-#floflo {
-  width: 30cqi;
-  max-width: 280px;
-  min-width: 150px;
-  aspect-ratio: 3 / 4;
-  border: var(--border-normal) var(--pink-500);
-  box-shadow: var(--shadow-sm);
-  background-image: url("../assets/images/floflo.avif");
-  background-size: cover;
-}

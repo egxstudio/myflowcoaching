@@ -45,11 +45,29 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-end {
+  align-items: flex-end;
+}
 .text-justify {
   text-align: justify;
 }
 .text-center {
   text-align: center;
+}
+.text-flex {
+  width: 60%;
+  min-width: 320px;
+}
+.photo {
+  /* flex: 1; */
+  width: 30%;
+  aspect-ratio: 3 / 4;
+  min-width: 150px;
+  max-width: 250px;
+  border: var(--border-normal) var(--pink-500);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow-xl);
+  margin: var(--space-4);
 }
 /* VISUAL */
 .border-light {

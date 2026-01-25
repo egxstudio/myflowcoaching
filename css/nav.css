@@ -49,7 +49,7 @@ nav li {
 .nav-checkbox {
   display: none;
 }
-@container (max-width: 320px) {
+@container (max-width: 330px) {
   #Home {
     display: none;
   }
