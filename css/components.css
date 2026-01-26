@@ -1,3 +1,16 @@
+.container {
+  width: 100%;
+  min-width: var(--screen-xs);
+  max-width: var(--screen-lg);
+  padding: var(--space-4);
+
+  container-type: inline-size;
+}
+@media (max-width: 896px) and (max-height: 480px) {
+  .view-height {
+    min-height: 100vh;
+  }
+}
 /* BUTTONS */
 .btn {
   /* reset link style */
@@ -49,9 +62,23 @@
   outline-offset: 2px;
 }
 /* CARDS */
+.card-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@container (min-width: 700px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .card {
+  /* Container query */
+  container-type: inline-size;
   /* Layout */
-  padding: var(--space-8);
+  /* padding: 1.5rem; */
+  padding: 5%;
   width: 100%;
   aspect-ratio: 1;
   max-width: 350px;
@@ -62,38 +89,33 @@
   box-shadow: var(--shadow-md);
   /* Typography */
   font-weight: 700;
-  font-size: var(--text-fluid);
   color: var(--red-500);
-  /* Container query */
-  container-type: inline-size;
-}
-.card:nth-child(2n) {
-  background-color: var(--primary-200);
 }
 .card > svg {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
     drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.23));
+  width: 40%;
+  height: 40%;
+  aspect-ratio: 1;
 }
 .card > p {
+  font-size: var(--text-fluid-small);
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16))
     drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.23));
-}
-.card-grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-4);
+  margin-top: 0.4em;
 }
 .card-color {
   text-shadow: 0 2px 4px white;
 }
-.container {
-  width: 100%;
-  min-width: var(--screen-xs);
-  max-width: var(--screen-lg);
-  padding: var(--space-4);
-
-  container-type: inline-size;
+.card:nth-child(2),
+.card.card:nth-child(3),
+.card.card:nth-child(6) {
+  background-color: var(--primary-200);
+}
+@container (min-width: 700px) {
+  .card:nth-child(2n) {
+    background-color: var(--primary-200);
+  }
 }
 .h-red {
   color: var(--red-500);

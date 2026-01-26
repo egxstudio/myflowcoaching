@@ -42,10 +42,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.flex-end {
+  justify-content: flex-end;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
-.flex-end {
+.align-end {
   align-items: flex-end;
 }
 .text-justify {

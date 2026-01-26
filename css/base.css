@@ -27,4 +27,11 @@ section {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 200px;
+  color: var(--bg-main);
+  font-family: var(--font-default);
+}
+#hero > p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
 }
