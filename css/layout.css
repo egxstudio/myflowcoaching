@@ -10,12 +10,9 @@ main {
   flex-grow: 1;
 }
 @media (max-width: 896px) and (max-height: 480px) {
-  main {
+  container {
     width: 80vw;
   }
-}
-section {
-  margin-bottom: var(--space-4);
 }
 .logo {
   min-width: 150px;

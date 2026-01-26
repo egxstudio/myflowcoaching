@@ -21,6 +21,9 @@ section {
   background-position: center center;
   box-shadow: inset 0 0 20px 20px var(--bg-main);
 }
+#header > p {
+  font-family: var(--font-default);
+}
 #hero {
   background-image: url("../assets/images/flow-line.avif");
   background-size: cover;

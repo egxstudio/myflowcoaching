@@ -77,6 +77,7 @@
   --pink-600: oklch(59.83% 0.097 358.71); /* Darker Pink for Contrast */
   --pink-500: oklch(79.83% 0.097 358.71); /* Main Brand Pink */
   --pink-100: oklch(99.83% 0.097 358.71); /* Soft Background Pink */
+  --pink-t: oklch(99.83% 0.097 358.71/0.5); /* Soft Background Pink */
 
   /* --- 🔴 REDS: Urgency & Alerts --- */
   --red-600: oklch(50% 0.2 28); /* Deep Red for Text Alerts */
