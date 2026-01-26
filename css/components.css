@@ -6,11 +6,6 @@
 
   container-type: inline-size;
 }
-@media (max-width: 896px) and (max-height: 480px) {
-  .view-height {
-    min-height: 100vh;
-  }
-}
 /* BUTTONS */
 .btn {
   /* reset link style */
