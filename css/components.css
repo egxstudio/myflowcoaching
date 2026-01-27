@@ -1,5 +1,4 @@
 .container {
-  width: 100%;
   min-width: var(--screen-xs);
   max-width: var(--screen-lg);
   width: 92vw;
@@ -52,7 +51,7 @@
   transform: translateY(-2px);
 }
 .btn:active {
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 .btn:focus-visible {
   outline: 3px solid currentColor;

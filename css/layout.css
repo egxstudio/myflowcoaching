@@ -13,6 +13,14 @@ main {
   container {
     width: 80vw;
   }
+  .video-wrapper {
+    max-height: 70vh;
+  }
+  iframe {
+    max-height: 70vh;
+    width: auto;
+    max-width: 100%;
+  }
 }
 .logo {
   min-width: 150px;
@@ -22,24 +30,6 @@ main {
   background-color: transparent;
 }
 
-.header {
-  margin-top: var(--space-2);
-  max-height: 500px;
-  width: 100%;
-  gap: var(--space-2);
-}
-.header h1 {
-  white-space: nowrap;
-  max-width: 300px;
-  margin-bottom: 0;
-}
-.header > * {
-  flex: 1 1;
-}
-.header p {
-  min-width: 300px;
-  margin-bottom: 0;
-}
 .header-text {
   align-self: self-end;
 }

@@ -1,7 +1,6 @@
 .navigation {
   position: sticky;
   border-bottom: 2px solid var(--neutral-100);
-  position: -webkit-sticky;
   width: 100%;
   min-width: var(--screen-xs);
   height: var(--mobile-touch);

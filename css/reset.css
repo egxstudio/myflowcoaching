@@ -31,6 +31,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%; /* Prevents images from overflowing 320px screens */
+  max-height: 100cqh;
 }
 input,
 button,
