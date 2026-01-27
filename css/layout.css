@@ -17,9 +17,13 @@ main {
     max-height: 80vh;
   }
   iframe {
-    max-height: 80vh;
+    /* max-height: 80vh; */
     /* width: auto; */
-    max-width: 100%;
+    /* max-width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
   }
 }
 .logo {
