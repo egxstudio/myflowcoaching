@@ -13,11 +13,11 @@
 .carousel-track {
   display: flex;
   gap: var(--space-4);
-  padding: var(--space-2) 0;
+  padding-top: var(--space-2);
 }
 .carousel-item {
   flex: 0 0 auto;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
