@@ -59,6 +59,9 @@
 .text-center {
   text-align: center;
 }
+.wrap-balance {
+  text-wrap: balance;
+}
 .text {
   max-width: 65ch;
   min-width: 300px;
@@ -81,6 +84,5 @@
 .photo {
   border: var(--border-normal) var(--pink-500);
   border-radius: var(--rounded);
-  box-shadow: var(--shadow-xl);
-  margin: var(--space-4);
+  box-shadow: var(--shadow-md);
 }

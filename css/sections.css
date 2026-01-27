@@ -44,6 +44,7 @@
   width: 220px;
   max-width: 40%;
   aspect-ratio: 3 / 3.7;
+  margin: 0 var(--space-4) var(--space-4) var(--space-4);
 }
 #mots-du-coach .text {
   max-width: 60%;
