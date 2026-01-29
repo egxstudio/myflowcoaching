@@ -26,15 +26,19 @@
   margin-bottom: 0;
 }
 #hero {
-  background-image: url("../assets/images/flow-line.avif");
+  font-family: "Cal Sans";
+  background-image: url("../assets/images/bkg/flow-line.avif");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  position: relative;
+  width: 100vw;
   min-height: 200px;
   color: var(--bg-main);
   font-family: var(--font-default);
 }
 #hero > p:nth-child(1) {
+  font-weight: 700;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -48,4 +52,68 @@
 }
 #mots-du-coach .text {
   max-width: 60%;
+}
+#problems-grid {
+  font-family: "Cal Sans";
+  font-weight: 700;
+  font-size: min(4cqi, 1.5rem);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: var(--space-2); */
+  padding-bottom: var(--space-2);
+  grid-template-areas:
+    "p-ican p-happy"
+    "p-tired p-climb"
+    "p-smile p-change";
+  .p-ican {
+    grid-area: p-ican;
+  }
+  .p-happy {
+    grid-area: p-happy;
+  }
+  .p-tired {
+    grid-area: p-tired;
+  }
+  .p-climb {
+    grid-area: p-climb;
+  }
+  .p-smile {
+    grid-area: p-smile;
+  }
+  .p-change {
+    grid-area: p-change;
+  }
+}
+@container (min-width: 700px) {
+  #problems-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "p-ican p-happy p-climb"
+      "p-tired p-smile p-change";
+  }
+}
+#hero-2 {
+  background-image: url("../assets/images/bkg/stars.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 150px;
+  color: var(--bg-main);
+  font-family: var(--font-default);
+}
+#hero-2-text {
+  font-family: "Cal Sans";
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-size: min(1.5rem, 3cqi);
+  border: 2px solid var(--neutral-100);
+  background-color: var(--surface-glass);
+  background-color: var(--overlay-dark);
+}
+#hero-2 cite {
+  color: var(--neutral-100);
+  font-size: min(1rem, 2cqi);
+  margin: 0;
 }
