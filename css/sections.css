@@ -31,8 +31,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  width: 100vw;
   min-height: 200px;
   color: var(--bg-main);
   font-family: var(--font-default);
@@ -41,6 +39,30 @@
   font-weight: 700;
   font-size: 1.5rem;
   font-weight: 700;
+  margin: 0;
+}
+#hero-2 {
+  background-image: url("../assets/images/bkg/stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  color: var(--bg-main);
+  font-family: var(--font-default);
+}
+#hero-2-text {
+  font-family: "Cal Sans";
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-size: min(1.5rem, 3cqi);
+  border: 2px solid var(--neutral-100);
+  background-color: var(--surface-glass);
+  background-color: var(--overlay-dark);
+}
+#hero-2 cite {
+  color: var(--neutral-100);
+  font-size: min(1rem, 2cqi);
   margin: 0;
 }
 #mots-du-coach img {
@@ -93,27 +115,37 @@
       "p-tired p-smile p-change";
   }
 }
-#hero-2 {
-  background-image: url("../assets/images/bkg/stars.jpg");
+#test {
+  width: 100vw;
+  background-image: url("../assets/images/flowing.avif");
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  min-height: 150px;
-  color: var(--bg-main);
-  font-family: var(--font-default);
-}
-#hero-2-text {
-  font-family: "Cal Sans";
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  font-size: min(1.5rem, 3cqi);
-  border: 2px solid var(--neutral-100);
   background-color: var(--surface-glass);
-  background-color: var(--overlay-dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-#hero-2 cite {
-  color: var(--neutral-100);
-  font-size: min(1rem, 2cqi);
-  margin: 0;
+#test::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--surface-glass);
+  z-index: 1;
+}
+#test-wrapper {
+  z-index: 2;
+}
+#test p {
+  color: white;
+  font-size: 2cqi;
+}
+#test-1 {
+  border: 2px solid var(--bg-main);
 }
