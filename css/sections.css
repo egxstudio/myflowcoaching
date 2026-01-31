@@ -115,6 +115,28 @@
       "p-tired p-smile p-change";
   }
 }
+#meditate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+@container (min-width: 700px) {
+  #meditate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+  #test-1,
+  test-2 {
+    max-width: 50cqi;
+    height: 100%;
+  }
+  #test-2 {
+    height: 100%;
+  }
+}
 #test {
   width: 100vw;
   background-image: url("../assets/images/flowing.avif");
@@ -147,5 +169,35 @@
   font-size: 2cqi;
 }
 #test-1 {
-  border: 2px solid var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid var(--bg-main);
+}
+#test-1 cite {
+  color: var(--neutral-100);
+  font-size: min(1.5rem, 2cqi);
+  margin: 0;
+}
+#test-1 p {
+  font-size: max(1rem, 3cqi);
+  text-align: center;
+  margin-bottom: 0;
+}
+#test-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#test-2 p {
+  font-size: max(0.8rem, 1.5cqi);
+  text-align: justify;
+  text-wrap: balance;
+}
+#test-2:last-of-type(p) {
+  padding-bottom: 0;
 }
