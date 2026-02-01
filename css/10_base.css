@@ -1,0 +1,95 @@
+/* =========================
+   BASE: reset + defaults
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiasied;
+
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--neutral-900);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-5); /* Room for bullets/numbers */
+}
+li {
+  margin-bottom: var(--space-2); /* Tight space between items */
+}
+li:last-child {
+  margin-bottom: 0;
+}
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+h1,
+h2,
+h3 {
+  font-family: var(--font-hand);
+}
+h1 {
+  margin-bottom: var(--space-4);
+  background: linear-gradient(
+    90deg,
+    var(--primary-600),
+    var(--primary-500),
+    var(--pink-600)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2,
+h3 {
+  margin-bottom: var(--space-2);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

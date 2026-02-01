@@ -1,6 +1,7 @@
 .navigation {
   position: sticky;
   border-bottom: 2px solid var(--neutral-100);
+  position: -webkit-sticky;
   width: 100%;
   min-width: var(--screen-xs);
   height: var(--mobile-touch);
@@ -21,6 +22,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: var(--surface-glass);
   isolation: isolate;
   flex: 1;
   gap: var(--space-2);
@@ -30,7 +32,6 @@
 }
 .nav-main::before {
   content: "";
-  background: var(--surface-glass);
   backdrop-filter: blur(1px);
   position: absolute;
   height: 100%;
@@ -93,7 +94,6 @@ nav li {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 9999;
 }
 
 .bar {

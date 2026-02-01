@@ -1,0 +1,24 @@
+.debug {
+  outline: 2px dashed red !important;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.wrap-balance {
+  text-wrap: balance;
+}
+.text {
+  max-width: 65ch;
+  min-width: 300px;
+}
+.border-light {
+  border: 1.5px solid var(--neutral-100);
+}
+.photo {
+  border: var(--border-normal) var(--pink-500);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow-md);
+}
