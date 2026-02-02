@@ -1,0 +1,334 @@
+/* =========================================================
+   1) TOKENS (PALETTE + GLOBALS)
+   ========================================================= */
+:root {
+  /* Your palette */
+  --midnight-violet: #191528ff;
+  --midnight-violet-2: #3c162fff;
+  --crimson-violet: #5c162eff;
+  --dark-amaranth: #7c162eff;
+  --ink-black: #110e1bff;
+
+  /* Theme tokens derived from palette (change here, not everywhere) */
+  --bg: var(--ink-black);
+  --panel: rgba(25, 21, 40, 0.38); /* transparent midnight */
+  --panel-2: rgba(60, 22, 47, 0.22); /* transparent violet 2 */
+  --text: rgba(255, 255, 255, 0.88);
+  --muted: rgba(255, 255, 255, 0.62);
+  --muted-2: rgba(255, 255, 255, 0.48);
+
+  --border: rgba(255, 255, 255, 0.1);
+  --border-soft: rgba(255, 255, 255, 0.06);
+
+  --accent: var(--dark-amaranth);
+  --accent-soft: rgba(124, 22, 46, 0.55);
+
+  --radius: 14px;
+  --radius-sm: 10px;
+
+  --gap: 30px;
+  --pad: 30px;
+  --header-h: 120px;
+  --footer-h: 120px;
+
+  --max-text: 70ch;
+}
+
+/* =========================================================
+   2) BASE / RESET (STRUCTURAL ONLY)
+   ========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================================================
+   2.5) TYPOGRAPHY TOKENS (SWITCHABLE FONT SYSTEM)
+   ========================================================= */
+
+/* Google Fonts imports */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --font-display: "Cinzel", ui-serif, Georgia, "Times New Roman", serif;
+  --font-body:
+    "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+
+  --h1-size: clamp(2rem, 2.6vw + 1rem, 3.1rem);
+  --h2-size: clamp(1.8rem, 2.4vw + 1rem, 3.2rem);
+  --h3-size: 1.2rem;
+
+  --body-size: 1rem;
+  --small-size: 0.9rem;
+
+  --tracking-display: 0.06em;
+  --tracking-ui: 0.1em;
+}
+/* =========================================================
+   TYPOGRAPHY APPLICATION (DO NOT TOUCH)
+   ========================================================= */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  font-weight: 400;
+}
+
+header h1,
+article h2,
+article h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+header h1 {
+  font-size: var(--h1-size);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+article h2 {
+  font-size: var(--h2-size);
+  font-weight: 700;
+}
+
+article h3 {
+  font-size: var(--h3-size);
+  font-weight: 600;
+}
+
+nav,
+aside,
+footer {
+  font-family: var(--font-body);
+}
+
+nav .nav-title,
+.stamp-title {
+  padding-top: 2rem;
+  letter-spacing: var(--tracking-ui);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+article p {
+  font-weight: 350;
+}
+
+.fineprint,
+.footer-note {
+  font-size: var(--small-size);
+}
+/* =========================================================
+   3) LAYOUT (GRID + SPACING ONLY)
+   Keep all layout here so theme can change independently.
+   ========================================================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: var(--gap);
+  min-height: 100vh;
+}
+
+/* Holy grail regions */
+header {
+  min-height: var(--header-h);
+  grid-column: span 3;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 0 var(--pad);
+}
+
+nav {
+  padding: var(--pad);
+}
+
+article {
+  padding: var(--pad);
+}
+
+article h2 {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 0 18px;
+}
+
+article p {
+  margin-top: 30px;
+  line-height: 2em;
+  max-width: var(--max-text);
+}
+
+aside {
+  padding: var(--pad);
+}
+
+footer {
+  min-height: var(--footer-h);
+  grid-column: span 3;
+  text-align: center;
+  padding: var(--pad);
+  display: grid;
+  place-items: center;
+}
+
+nav li {
+  margin: 10px 0;
+}
+@media screen and (max-width: 1000px) {
+  .site-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  nav {
+    grid-column: span 3;
+    border-right: 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .nav-image {
+    height: 150px;
+  }
+  .stamp-title {
+    padding-top: 0;
+  }
+  article {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .site-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  nav,
+  article,
+  aside {
+    grid-column: span 3;
+  }
+  aside {
+    border-left: 0;
+    border-top: 1px solid var(--border-soft);
+  }
+}
+/* =========================================================
+   4) THEME (COLORS, BORDERS, SURFACES, TYPO)
+   Only visuals here.
+   ========================================================= */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.grid-container {
+  background: linear-gradient(
+    180deg,
+    var(--midnight-violet) 0%,
+    var(--ink-black) 100%
+  );
+}
+
+/* Region surfaces */
+header {
+  background: radial-gradient(
+    1200px 220px at 50% 0%,
+    rgba(92, 22, 46, 0.5),
+    transparent 70%
+  );
+  border-bottom: 1px solid var(--border-soft);
+}
+
+nav {
+  background: var(--panel);
+  border-right: 1px solid var(--border-soft);
+}
+
+article {
+  background: rgba(17, 14, 27, 0.32);
+}
+
+aside {
+  background: var(--panel-2);
+  border-left: 1px solid var(--border-soft);
+}
+
+footer {
+  background: rgba(25, 21, 40, 0.22);
+  border-top: 1px solid var(--border-soft);
+}
+
+/* Text styling */
+article p {
+  color: var(--muted);
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Link styling that fits dark mystery */
+nav a {
+  color: var(--text);
+  border-bottom: 1px solid var(--accent-soft);
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Images */
+article img,
+aside img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  filter: contrast(1.05) saturate(0.95);
+}
+
+/* Optional: subtle separators for aside meta lists if you use them */
+aside li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
