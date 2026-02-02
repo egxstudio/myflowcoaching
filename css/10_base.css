@@ -20,7 +20,8 @@ body {
   -webkit-font-smoothing: antialiasied;
 
   font-family: var(--font-main);
-  background-color: var(--bg-main);
+  /* background-color: var(--bg-main); */
+  background-color: lightgoldenrodyellow;
   color: var(--neutral-900);
 }
 img,
