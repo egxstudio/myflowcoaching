@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Soft Valentine palette */
+  --bg: #fff7fb; /* blush-white background */
+  --surface: #ffffff; /* cards/header */
+  --text: #2a2230; /* warm dark plum */
+  --muted: #6b5b6b; /* soft muted text */
+  --border: rgba(214, 167, 196, 0.35);
+
+  --pink-1: #ffd1e3; /* powder pink */
+  --pink-2: #ffb6c9; /* rosy */
+  --pink-3: #ffcfe0; /* blush */
+  --accent: #e85a8a; /* romantic accent */
+  --accent-2: #c24a74; /* deeper accent for hover */
+
+  --shadow: 0 18px 55px rgba(232, 90, 138, 0.12);
+  --shadow-soft: 0 10px 28px rgba(31, 18, 28, 0.1);
+
+  --radius: 18px;
+  --radius-lg: 26px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  color: var(--text);
+
+  /* warm sweet background */
+  background:
+    radial-gradient(
+      900px 500px at 15% 10%,
+      rgba(255, 182, 201, 0.35),
+      transparent 55%
+    ),
+    radial-gradient(
+      700px 420px at 85% 0%,
+      rgba(255, 209, 227, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 420px at 50% 95%,
+      rgba(255, 207, 224, 0.3),
+      transparent 55%
+    ),
+    var(--bg);
+}
+
+/* Optional: make text feel softer */
+p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+/* Header */
+header {
+  padding: 18px 40px;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  grid-column: span 6;
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: 0.2px;
+}
+
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: end;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 182, 201, 0.1);
+  border: 1px solid rgba(232, 90, 138, 0.18);
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+header nav a:hover {
+  background: rgba(232, 90, 138, 0.14);
+  border-color: rgba(232, 90, 138, 0.28);
+  box-shadow: 0 10px 24px rgba(232, 90, 138, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 56px auto;
+  padding: 20px;
+}
+
+/* HERO IMAGE with gradient frame + soft glow (works on <img>) */
+/* PHOTO FRAME (wrapper) */
+.photo-frame {
+  grid-column: span 6;
+  border-radius: 26px;
+  padding: 8px; /* frame thickness */
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 201, 0.95),
+    rgba(255, 220, 235, 0.55),
+    rgba(232, 90, 138, 0.2)
+  );
+
+  box-shadow:
+    0 18px 55px rgba(232, 90, 138, 0.16),
+    0 10px 24px rgba(0, 0, 0, 0.1);
+
+  transform: rotate(-1.4deg);
+}
+
+.photo-frame .photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px; /* slightly less than wrapper */
+  background: #fff; /* safety */
+}
+
+/* Responsive placement */
+@media screen and (max-width: 960px) {
+  .photo-frame {
+    grid-column: 2 / span 10;
+    transform: rotate(-1deg);
+  }
+}
+
+main .welcome {
+  grid-column: 8 / span 5;
+  align-self: center;
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: 0 14px 34px rgba(232, 90, 138, 0.08);
+}
+
+main .welcome h2 {
+  text-align: left;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+main h2 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 18px;
+  margin: 18px 0 6px;
+  color: var(--text);
+}
+
+/* Cards */
+main .card {
+  grid-column: span 4;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: 0 16px 40px rgba(31, 18, 28, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+main .card h3 {
+  margin: 4px 0 10px;
+  color: var(--text);
+}
+
+main .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 55px rgba(232, 90, 138, 0.12);
+}
+
+/* Slightly sweeter selection highlight */
+::selection {
+  background: rgba(232, 90, 138, 0.25);
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  header h1 {
+    grid-column: span 12;
+    text-align: center;
+  }
+  header nav {
+    grid-column: span 12;
+    justify-self: center;
+    flex-wrap: wrap;
+  }
+
+  main img.photo {
+    grid-column: 2 / span 10;
+    transform: rotate(-1deg);
+  }
+
+  main .welcome {
+    grid-column: 2 / span 10;
+    text-align: center;
+  }
+
+  main .welcome h2 {
+    text-align: center;
+  }
+
+  main .card {
+    grid-column: 2 / span 10;
+  }
+}
+
+/* =========================
+   BLOCK 1 — Subtle “rose paper” texture
+   Paste anywhere (usually near body styles)
+   ========================= */
+/* body { */
+/*   background: */
+/*     radial-gradient( */
+/*       900px 520px at 15% 10%, */
+/*       rgba(255, 182, 201, 0.28), */
+/*       transparent 55% */
+/*     ), */
+/*     radial-gradient( */
+/*       700px 420px at 85% 0%, */
+/*       rgba(255, 209, 227, 0.26), */
+/*       transparent 60% */
+/*     ), */
+/*     radial-gradient( */
+/*       700px 420px at 50% 95%, */
+/*       rgba(255, 207, 224, 0.22), */
+/*       transparent 55% */
+/*     ), */
+/*     /* paper grain */
+*/
+/*     repeating-linear-gradient( */
+/*         45deg, */
+/*         rgba(232, 90, 138, 0.035) 0, */
+/*         rgba(232, 90, 138, 0.035) 1px, */
+/*         transparent 1px, */
+/*         transparent 7px */
+/*       ), */
+/*     #fff7fb; */
+/* } */
+/**/
+/* /* ========================= */
+/*    BLOCK 2 — Cannes “sea-view” gradient wash */
+/*    Paste anywhere; it overlays behind content */
+/*    (works best if your body is already position:relative) */
+/*    ========================= */ */
+/* body { */
+/*   position: relative; */
+/* } */
+/**/
+/* body::before { */
+/*   content: ""; */
+/*   position: fixed; */
+/*   inset: 0; */
+/*   z-index: -1; */
+/*   pointer-events: none; */
+/**/
+/*   background: */
+/*     radial-gradient( */
+/*       1200px 700px at 50% -10%, */
+/*       rgba(255, 214, 230, 0.55), */
+/*       transparent 60% */
+/*     ), */
+/*     linear-gradient( */
+/*       180deg, */
+/*       rgba(180, 225, 255, 0.35) 0%, */
+/*       rgba(255, 245, 251, 0.9) 45%, */
+/*       rgba(255, 221, 235, 0.35) 100% */
+/*     ); */
+/* } */
+
+/* =========================
+   BLOCK 3 — Floating hearts/petals (light animation)
+   Paste anywhere. No HTML changes.
+   ========================= */
+body {
+  overflow-x: hidden;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.55;
+
+  /* soft “petal” blobs (not literal hearts, classy) */
+  background:
+    radial-gradient(
+      10px 12px at 15% 110%,
+      rgba(232, 90, 138, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      12px 10px at 35% 115%,
+      rgba(255, 182, 201, 0.18),
+      transparent 62%
+    ),
+    radial-gradient(
+      9px 11px at 55% 112%,
+      rgba(232, 90, 138, 0.14),
+      transparent 62%
+    ),
+    radial-gradient(
+      11px 9px at 75% 118%,
+      rgba(255, 209, 227, 0.18),
+      transparent 62%
+    ),
+    radial-gradient(
+      8px 10px at 90% 113%,
+      rgba(232, 90, 138, 0.12),
+      transparent 62%
+    );
+
+  animation: petalsFloat 14s linear infinite;
+  filter: blur(0.2px);
+}
+
+@keyframes petalsFloat {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+    opacity: 0.25;
+  }
+}
