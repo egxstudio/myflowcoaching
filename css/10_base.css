@@ -21,7 +21,7 @@ body {
 
   font-family: var(--font-main);
   /* background-color: var(--bg-main); */
-  background-color: lightgoldenrodyellow;
+  background-color: var(--bg-main);
   color: var(--neutral-900);
 }
 img,

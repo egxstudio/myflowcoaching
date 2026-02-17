@@ -25,11 +25,6 @@
   justify-content: center;
 }
 .site-header-inner {
-  background-image: image-set(
-    url("../assets/images/bkg/clouds.avif") type("image/avif"),
-    url("../assets/images/bkg/clouds.webp") type("image/webp"),
-    url("../assets/images/bkg/clouds.png") type("image/png")
-  );
   border-radius: var(--rounded);
   padding: var(--space-4) 0;
   background-size: cover;

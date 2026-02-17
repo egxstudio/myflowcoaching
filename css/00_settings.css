@@ -57,11 +57,6 @@
   --shadow-xl:
     0 10px 30px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.12); /* Dramatic; use sparingly on overlays for focus */
 
-  /* --- 3. animation & feel --- */
-  --transition-speed: 0.3s;
-  --transition-speed-slow: 0.7s;
-  --transition-timing: ease-in-out;
-  --menu-slide-speed: 0.4s;
   /* --- 4. COLORS --- */
   /* --- 🔵 PRIMARY: Trust & Professionalism --- */
   --primary-600: oklch(35% 0.12 250); /* Deep Navy for Headings */
@@ -106,24 +101,8 @@
   --text-button-fluid: clamp(var(--text-xs), 0.7rem + 0.5cqi, var(--text-lg));
   --text-fluid: clamp(var(--text-sm), 1.15rem + 0.2cqi, var(--text-3xl));
   --text-fluid-small: clamp(var(--text-xs), 8cqi, var(--text-2xl));
-  /* --- Corresponding Line Heights --- */
-  --lh-xs: 1rem; /* 16px */
-  --lh-sm: 1.25rem; /* 20px */
-  --lh-base: 1.5rem; /* 24px */
-  --lh-lg: 1.75rem; /* 28px */
-  --lh-xl: 1.75rem; /* 28px (Same as LG for tight headers) */
-  --lh-2xl: 2rem; /* 32px */
-  --lh-3xl: 2.25rem; /* 36px */
   /* Font families */
   --font-default: "Inter", system-ui, -apple-system, sans-serif;
   --font-main: "Aldrich", sans-serif;
   --font-hand: "Permanent Marker", cursive;
-  /* --- Z-INDEX SCALE --- */
-  --z-base: 1; /* Default stacking */
-  --z-dropdown: 100; /* Dropdowns, tooltips */
-  --z-sticky: 200; /* Sticky headers */
-  --z-modal-backdrop: 300; /* Modal backgrounds */
-  --z-modal: 400; /* Modal content */
-  --z-toast: 500; /* Toast notifications */
-  --z-tooltip: 600; /* Tooltips (highest) */
 }
