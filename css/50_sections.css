@@ -65,7 +65,33 @@
   justify-content: center;
 }
 /* =========================
-   COACH SECTION (was #mots-du-coach)
+   BENEFITS SECTION
+   ========================= */
+.benefits .section-header {
+  grid-column: span 6;
+}
+.benefits .card {
+  grid-column: span 6;
+}
+@container (min-width: 600px) and (max-width: 899px) {
+  .benefits .card {
+    grid-column: span 3;
+  }
+  .card-grid figure.card {
+    grid-column: span 2;
+  }
+}
+@container (min-width:900px) {
+  .benefits .card {
+    grid-column: span 2;
+  }
+}
+.benefits .photo {
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
+/* =========================
+   COACH SECTION
    ========================= */
 .coach {
   display: flex;
