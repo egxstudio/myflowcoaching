@@ -35,4 +35,7 @@ iframe {
   .container {
     width: 80vw;
   }
+  iframe {
+    max-height: 90vh;
+  }
 }
