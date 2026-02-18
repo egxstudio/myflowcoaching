@@ -31,7 +31,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  min-height: 150px;
+  min-height: 130px;
   color: var(--bg-main);
 
   display: flex;
@@ -73,11 +73,11 @@
 .benefits .card {
   grid-column: span 6;
 }
-@container (min-width: 600px) and (max-width: 899px) {
+@container (min-width: 640px) and (max-width: 899px) {
   .benefits .card {
     grid-column: span 3;
   }
-  .card-grid figure.card {
+  .grid-6c figure.card {
     grid-column: span 2;
   }
 }
@@ -91,29 +91,34 @@
   aspect-ratio: 16 / 9;
 }
 /* =========================
-   COACH SECTION
+   MOTS DU COACH SECTION
    ========================= */
-.coach {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  align-items: center;
+.mots-coach .lead {
+  line-height: 1.3em;
+  grid-column: span 6;
+  text-align: justify;
 }
-@container (min-width: 700px) {
-  .coach {
-    flex-direction: row;
-    align-items: flex-start;
+.mots-coach img {
+  grid-column: 3 / span 2;
+}
+
+@container (min-width: 640px) and (max-width: 899px) {
+  .mots-coach .lead {
+    grid-column: span 4;
+    place-self: center;
+  }
+  .mots-coach img {
+    grid-column: 5 / span 2;
   }
 }
-.coach img {
-  min-width: 150px;
-  width: 220px;
-  max-width: 40%;
-  aspect-ratio: 3 / 3.7;
-  margin: 0 var(--space-4) var(--space-4) var(--space-4);
-}
-.coach .text {
-  max-width: 60%;
+@container (min-width:900px) {
+  .mots-coach .lead {
+    grid-column: 2 / span 3;
+    place-self: center;
+  }
+  .mots-coach img {
+    grid-column: 5;
+  }
 }
 /* =========================
    PROBLEMS GRID
@@ -160,22 +165,69 @@
   }
 }
 /* =========================
-   MEDITATE SECTION
+   WHY-COACHING SECTION
    ========================= */
-.meditate {
+.flowing {
+  position: relative;
+  background: url("../assets/images/flowing.avif") center/cover no-repeat fixed;
+  color: var(--bg-main);
+}
+.flowing::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--surface-glass);
+  pointer-events: none;
+}
+.why-coaching .media {
+  grid-column: span 6;
+  border: 3px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-4);
+  padding: var(--space-4);
 }
-@container (min-width: 700px) {
-  .meditate {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-4);
+.why-coaching .media p {
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.why-coaching .lead {
+  grid-column: span 6;
+  text-align: justify;
+}
+@container (min-width: 640px) and (max-width:899px) {
+  .why-coaching .media {
+    grid-column: 1 / span 2;
+  }
+  .why-coaching .lead {
+    grid-column: span 4;
+  }
+}
+@container (min-width: 900px) {
+  .why-coaching .media {
+    grid-column: span 3;
+  }
+  .why-coaching .lead {
+    grid-column: span 3;
+    line-height: 1.3rem;
   }
 }
 /* =========================
-   TAKE TEST AREA
+   BONHEUR HERO
+   ========================= */
+.panel.bonheur {
+  padding: 0;
+  height: calc(80px + 7vw);
+  overflow: hidden;
+}
+.panel.bonheur img {
+  width: 100%;
+  height: 100%;
+}
+/* =========================
+   BONHEUR HERO
    ========================= */

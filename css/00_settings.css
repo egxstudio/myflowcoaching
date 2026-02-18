@@ -1,12 +1,10 @@
 :root {
   /* --- Screen Breakpoints --- */
-  --screen-xs: 320px; /* Smallest Mobile (iPhone SE/5) */
-  --screen-base: 375px; /* Standard Mobile (iPhone 13/14/15) */
+  --screen-min: 320px; /* Smallest Mobile (iPhone SE/5) */
   --screen-sm: 640px; /* Large Mobile / Phablets */
-  --screen-md: 768px; /* Tablets (iPad) */
-  --screen-lg: 1024px; /* Laptops / Small Desktop */
-  --screen-xl: 1280px; /* Desktop / MacBooks */
-  --screen-2xl: 1536px; /* High-Res Monitors */
+  --screen-sub-lg: 999px;
+  --screen-lg: 1000px; /* Tablets (iPad) */
+  --screen-max: 1280px; /* Desktop / MacBooks */
 
   /* --- 1. sizing --- */
   --mobile-touch: 48px;

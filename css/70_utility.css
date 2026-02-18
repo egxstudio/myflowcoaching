@@ -10,10 +10,6 @@
 .wrap-balance {
   text-wrap: balance;
 }
-.text {
-  max-width: 65ch;
-  min-width: 300px;
-}
 .border-light {
   border: 1.5px solid var(--neutral-100);
 }

@@ -50,7 +50,7 @@
   border-radius: 0 0 var(--rounded) var(--rounded);
   box-shadow: var(--shadow-xl);
   /* width: 100%; */
-  min-width: var(--screen-xs);
+  min-width: var(--screen-min);
   height: var(--mobile-touch);
   z-index: 9999;
   top: 0;
@@ -183,9 +183,9 @@ nav li {
   transform: translateY(-8px) rotate(-45deg);
 }
 /* =========================
-   FOOTER
+   PAGE FOOTER
    ========================= */
-footer {
+.page-footer {
   width: 100%;
   min-height: 100px;
   max-height: 200px;
