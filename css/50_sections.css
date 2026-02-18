@@ -229,5 +229,36 @@
   height: 100%;
 }
 /* =========================
-   BONHEUR HERO
+   COACHING ADVANTAGES
    ========================= */
+.advantages .section-header {
+  color: var(--red-500);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+.advantages .lead {
+  grid-column: span 4;
+}
+.advantages li:nth-child(odd) {
+  color: var(--red-500);
+}
+.advantages img {
+  max-height: 250px;
+  grid-column: span 2;
+  justify-self: center;
+}
+@container (min-width: 640px) {
+  .advantages ul {
+    columns: 2;
+    column-gap: var(--space-4);
+  }
+  .advantages li {
+    break-inside: avoid;
+  }
+  .advantages .icon {
+    grid-column: span 1;
+  }
+}

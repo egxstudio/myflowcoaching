@@ -1,4 +1,17 @@
 /* =========================
+   GRIDS
+   ========================= */
+.grid-6c {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-4);
+}
+.grid-4c {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+/* =========================
    WRAPPERS
    ========================= */
 .panel {
@@ -105,11 +118,6 @@ btn-red:hover {
 /* =========================
    CARD SYSTEM
    ========================= */
-.grid-6c {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--space-4);
-}
 .card {
   height: 190px;
   display: flex;
