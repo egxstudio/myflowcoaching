@@ -186,9 +186,19 @@ nav li {
    PAGE FOOTER
    ========================= */
 .page-footer {
-  width: 100%;
-  min-height: 100px;
-  max-height: 200px;
-  padding: var(--space-12) 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-footer .lead {
+  text-align: left;
+  width: 20ch;
+}
+.page-footer p {
+  color: var(--neutral-900);
+  margin: 0;
+}
+.page-footer p:last-of-type {
+  margin-top: 10px;
+  font-weight: 600;
 }
