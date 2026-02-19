@@ -67,6 +67,11 @@ h2,
 h3 {
   font-family: var(--font-hand);
 }
+h4,
+h5,
+h6 {
+  font-family: var(--font-default);
+}
 h1 {
   margin-bottom: var(--space-4);
   background: linear-gradient(
