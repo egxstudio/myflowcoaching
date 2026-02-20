@@ -185,14 +185,50 @@ nav li {
 /* =========================
    PAGE FOOTER
    ========================= */
+.panel.page-footer {
+  margin: 0;
+}
 .page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  place-items: center;
 }
 .page-footer .lead {
+  line-height: 1.5rem;
+  grid-column: span 12;
   text-align: left;
-  width: 20ch;
+}
+.page-footer .logo {
+  grid-column: span 12;
+}
+.page-footer .social-links {
+  grid-column: span 12;
+  display: flex;
+  gap: var(--space-4);
+}
+@container (min-width: 500px) and (max-width:899px) {
+  .page-footer .lead {
+    grid-column: span 6;
+    text-align: left;
+  }
+  .page-footer .logo {
+    grid-column: span 4;
+  }
+  .page-footer .social-links {
+    grid-column: span 2;
+    flex-direction: column;
+  }
+}
+@container (min-width: 900px) {
+  .page-footer .lead {
+    grid-column: span 4;
+    text-align: left;
+  }
+  .page-footer .logo {
+    grid-column: span 4;
+  }
+  .page-footer .social-links {
+    grid-column: span 4;
+    padding-top: 90px;
+  }
 }
 .page-footer p {
   color: var(--neutral-900);

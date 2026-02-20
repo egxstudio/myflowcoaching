@@ -1,14 +1,9 @@
 /* =========================
    GRIDS
    ========================= */
-.grid-6c {
+.grid-12 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--space-4);
-}
-.grid-4c {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: var(--space-4);
 }
 /* =========================
@@ -16,8 +11,8 @@
    ========================= */
 .panel {
   width: 100%;
-  padding: var(--space-4);
-  margin: var(--space-2) 0;
+  padding: var(--space-4) var(--space-6);
+  margin: 0 0 var(--space-4) 0;
 
   border-radius: var(--rounded);
   box-shadow: var(--shadow-xl);
